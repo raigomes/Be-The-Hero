@@ -1,4 +1,4 @@
-##Backend
+## Backend
     - Banco de Dados Relacional (SQLite) e backend em Node.js;
     - Definimos as Entidades e Funcionalidades a partir do layout;
     - "npx knex init" cria o knexfile.js que define o caminho das nossas conexões com o banco e as migrations;
@@ -20,7 +20,7 @@
         - SessionController: Métodos que validam a existência da ong que está fazendo login
     - Importante: Boa prática é definir uma paginação para a listagem de dados
 
-##Plugins
+## Plugins
     - express (http://expressjs.com/pt-br/)
         Framework Web para Node.js que oferece um conjunto de features que facilitam o gerenciamento de requisições e rotas, além de definir configurações da aplicação web
     - nodemon
