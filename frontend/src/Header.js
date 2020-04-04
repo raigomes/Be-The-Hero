@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function Header(props) {
   //Retorno Array [counter, setCounter()]
-  let [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(0)
 
   function increment() {
     setCounter(counter + 1)
