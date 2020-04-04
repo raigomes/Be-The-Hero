@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Header(props) {
+  //Retorno Array [counter, setCounter()]
+  let [counter, setCounter] = useState(0)
+
+  function increment() {
+    setCounter(counter + 1)
+  }
+  
   return (
     <header>
-        <h1>{props.children}</h1>
+      <h1>Contador: {counter}</h1>
+      <button onClick={increment}>Incrementar</button>
     </header>
   );
 }
