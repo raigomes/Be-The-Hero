@@ -16,9 +16,9 @@ export default function Profile() {
                 <Link className="button" to="/incidents/new">
                     Cadastrar novo caso
                 </Link>
-                <button type="button">
+                <Link className="button-close" to="/">
                     <FiPower size={18} color="#e02041" />
-                </button>
+                </Link>
             </header>
 
             <h1>Casos Cadastrados</h1>
