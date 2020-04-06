@@ -3,15 +3,17 @@ const connection = require('../database/connection')
 
 module.exports = {
     async index(request, response) {
-        const ong_id = request.body.id
-        const ongs = await connection('ongs')
-            .where('id', ong_id)
-            .select('ongs.name')
+        const { id } = request.body
 
-        if(ongs.length === 0) {
-            return response.status(403).json({ error: 'Invalid login.' })
+        const ong = await connection('ongs')
+            .where('id', id)
+            .select('name')
+            .first()
+
+        if(!ong) {
+            return response.status(400).json({ error: 'Invalid login.' })
         }
 
-        return response.status(202).json(ongs)
+        return response.status(202).json(ong)
     }
 }
