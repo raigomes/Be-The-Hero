@@ -30,3 +30,6 @@
     </code>
 </pre>
 
+- useEffect é o método onde você passa um callback que será executado após cada renderização.
+- useHistory é o metodo do pacote 'react-router-dom' que manipula o histórico do navegador.
+- useState, useEffect e useHistory são exemplos de hooks.
